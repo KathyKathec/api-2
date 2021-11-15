@@ -57,6 +57,15 @@ public class Partidos {
 		this.id = id;
 	}
 
+	public Ideologia getIdeologia() {
+		return ideologia;
+	}
+
+	public void setIdeologia(Ideologia ideologia) {
+		this.ideologia = ideologia;
+	}
+	
+
 	
 	
 	
