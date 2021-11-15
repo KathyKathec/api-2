@@ -2,11 +2,17 @@ package com.katherin.API2.modelo;
 
 import java.util.Date;
 
+import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
+@Entity
 public class Asociados {
-
+	
+	@Id @GeneratedValue (strategy = GenerationType.IDENTITY)
 	private int id;
 	private String nome;
 	@Enumerated(EnumType.STRING) 

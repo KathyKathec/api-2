@@ -1,13 +1,21 @@
 package com.katherin.API2.modelo;
 import java.util.*;
 
+import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
 
+@Entity
 public class Partidos {
-
+	
+	@Id @GeneratedValue (strategy = GenerationType.IDENTITY)
 	private int id;
-	private String nome_Partido;
+	@OneToMany
+	private String nome_partido;
 	private String sigla;
 	@Enumerated(EnumType.STRING) 
 	private Ideologia ideologia;
@@ -18,11 +26,11 @@ public class Partidos {
 	
 	
 	public String getNome_Partido() {
-		return nome_Partido;
+		return nome_partido;
 	}
 
 	public void setNome_Partido(String nome_Partido) {
-		this.nome_Partido = nome_Partido;
+		this.nome_partido = nome_Partido;
 	}
 
 	public String getSigla() {
