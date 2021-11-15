@@ -2,14 +2,17 @@ package com.katherin.API2.modelo;
 
 import java.util.Date;
 
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+
 public class Asociados {
 
 	private int id;
 	private String nome;
-	
+	@Enumerated(EnumType.STRING) 
 	private CargoPolitico cargo_politico;
 	private Date data_nascimento;
-	
+	@Enumerated(EnumType.STRING) 
 	private Sexo sexo;
 	
 	
