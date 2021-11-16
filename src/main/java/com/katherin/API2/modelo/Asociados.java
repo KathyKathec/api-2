@@ -21,12 +21,7 @@ public class Asociados {
 	@Enumerated(EnumType.STRING) 
 	private Sexo sexo;
 	
-	
-	
-	
-	
-	
-	
+		
 	
 	public int getId() {
 		return id;
