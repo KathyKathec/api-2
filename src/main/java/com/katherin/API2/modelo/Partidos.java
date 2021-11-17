@@ -23,6 +23,18 @@ public class Partidos {
 	
 	
 	
+	
+	
+	public Partidos(String nome_partido, String sigla, Ideologia ideologia, Date data_fundacao) {
+		this.nome_partido = nome_partido;
+		this.sigla = sigla;
+		this.ideologia = ideologia;
+		this.data_fundacao = data_fundacao;
+	}
+
+	public Partidos() {
+	}
+
 	public String getNome_Partido() {
 		return nome_partido;
 	}

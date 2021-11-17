@@ -21,7 +21,7 @@ class PartidosServiceTest {
 		PartidosController controller = new PartidosController();
 		Ideologia ideologia ;
 		
-		service.filtrandoIdeologias(Ideologia.Centro );
+		//service.filtrandoIdeologias(Ideologia.Centro );
 		List<Partidos> partidos;
 	//	Assertions.assertEquals(PartidosDto.convertir(partidos), null);
 	}
