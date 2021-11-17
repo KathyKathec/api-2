@@ -7,6 +7,7 @@ import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 
 
 @Entity
@@ -14,13 +15,12 @@ public class Partidos {
 	
 	@Id @GeneratedValue (strategy = GenerationType.IDENTITY)
 	private int id;
-	//@ManyToOne
 	private String nome_partido;
 	private String sigla;
 	@Enumerated(EnumType.STRING) 
 	private Ideologia ideologia;
 	private Date data_fundacao;
-
+	
 	
 	
 	public String getNome_Partido() {

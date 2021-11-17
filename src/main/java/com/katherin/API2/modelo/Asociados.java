@@ -8,19 +8,21 @@ import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 @Entity
 public class Asociados {
 	
 	@Id @GeneratedValue (strategy = GenerationType.IDENTITY)
 	private int id;
+	
 	private String nome;
 	@Enumerated(EnumType.STRING) 
 	private CargoPolitico cargo_politico;
 	private Date data_nascimento;
 	@Enumerated(EnumType.STRING) 
 	private Sexo sexo;
-	
+
 		
 	
 	public int getId() {
